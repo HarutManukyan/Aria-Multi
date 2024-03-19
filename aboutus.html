@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" type="image/png" href="./img/logo.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <title>Aria | About Us</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">
+        <a href="./index.html" class="header__list-link header__list-logo"
+          ><img
+            class="header__logo-img"
+            src="./img/logo-removebg-preview.png"
+            alt="logo"
+        /></a>
+      </h1>
+      <ul class="header__list">
+        <!-- <li class="header__list-item">
+          <a
+            href="./aboutus.html"
+            data-lang="about"
+            class="lang header__list-link"
+            >About us</a
+          >
+        </li>
+        <li class="header__list-item">
+          <a
+            href="./contacts.html"
+            data-lang="contacts"
+            class="lang header__list-link"
+            >Contacts</a
+          >
+        </li>
+        <li class="header__list-item">
+          <a href="./faq.html" data-lang="faq" class="lang header__list-link"
+            >FAQ</a
+          >
+        </li> -->
+        <div class="dropdown">
+          <input type="checkbox" id="dropdown" />
+
+          <label class="dropdown__face" for="dropdown">
+            <div class="dropdown__text">Language</div>
+
+            <div class="dropdown__arrow"></div>
+          </label>
+
+          <ul class="dropdown__items">
+            <li class="dropdown__item">
+              <button
+                class="translate translate-eng"
+                id="en"
+                data-btn="en"
+              ></button>
+            </li>
+            <li class="dropdown__item">
+              <button
+                class="translate translate-rus"
+                id="ru"
+                data-btn="ru"
+              ></button>
+            </li>
+            <li class="dropdown__item">
+              <button
+                class="translate translate-arm"
+                id="am"
+                data-btn="am"
+              ></button>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </header>
+
+    <!-- <header class="header"></header> -->
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="navigation__button">
+        <span
+          class="navigation__icon"
+          aria-label="toggle navigation menu"
+        ></span>
+      </label>
+      <div class="navigation__background"></div>
+
+      <nav class="navigation__nav" role="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              href="./aboutus.html"
+              data-lang="about"
+              class="lang header__list-link"
+              >About us</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="./contacts.html"
+              data-lang="contacts"
+              class="lang header__list-link"
+              >Contacts</a
+            >
+          </li>
+
+          <a href="./faq.html" data-lang="faq" class="lang header__list-link"
+            >FAQ</a
+          >
+        </ul>
+      </nav>
+    </div>
+
+    <div class="about__top">
+      <h2 data-lang="about_title" class="about__title">About us</h2>
+      <p data-lang="about_text" class="about__text">
+        Hello, We present the Aria sewing factory, which started its activity in
+        2017. We are engaged in the production, modeling, design and printing of
+        clothes
+      </p>
+    </div>
+
+    <section class="about__section--1">
+      <div class="about__section--1-img-container">
+        <div class="about__section--1-clip-filled"></div>
+        <div class="about__section--1-clip-unfilled"></div>
+        <img src="./img/WB12.png" alt="model" class="about__section--1-img" />
+      </div>
+
+      <div class="about__section--1-texts">
+        <h4 data-lang="about_section_1_title" class="about__section--1-title">
+          Crafting Quality Apparel
+        </h4>
+        <p data-lang="about_section_1_text" class="about__section--1-text">
+          At Aria Textile, our commitment to excellence shines through every
+          step of the apparel-making process. We take immense pride in crafting
+          garments that endure the test of time. Through a meticulous blend of
+          traditional craftsmanship and modern techniques, our skilled artisans
+          infuse each piece with elegance and sophistication. Here, you can find
+          clothes made of fabric at a lower price than the market, but very high
+          quality. Moreover, we're pleased to offer a range of fabric clothing
+          at exceptionally competitive prices without compromising on quality.
+          Here, you'll discover attire that not only meets high standards but
+          also provides excellent value for your investment.
+        </p>
+      </div>
+    </section>
+
+    <section class="about__section--1">
+      <div class="about__section--1-texts">
+        <h4
+          data-lang="about_section_2_title"
+          class="about__section--1-title about__section--2-title"
+        >
+          Our Commitment to Excellence
+        </h4>
+        <p data-lang="about_section_2_text" class="about__section--1-text">
+          Our unwavering commitment to excellence drives every aspect of our
+          operations. From design conceptualization to the manufacturing
+          process, we uphold the highest standards to deliver clothing products
+          that exceed expectations. We continuously strive for perfection,
+          seeking to innovate and refine our processes to ensure that each
+          garment leaving our factory is a testament to our pursuit of
+          excellence.
+        </p>
+      </div>
+
+      <div style="margin-top: -5rem" class="about__section--1-img-container">
+        <div
+          style="
+            border-radius: 30px;
+            height: 25rem;
+            width: 50rem;
+            clip-path: none;
+            transform: rotate(75deg);
+            top: 20rem;
+          "
+          class="about__section--1-clip-filled"
+        ></div>
+        <div
+          style="
+            border-radius: 30px;
+            height: 15rem;
+            width: 50rem;
+            top: 20rem;
+            left: 10rem;
+            transform: rotate(35deg);
+          "
+          class="about__section--1-clip-unfilled"
+        ></div>
+        <img
+          style="width: 40rem"
+          src="./img/WB13.png"
+          alt="model"
+          class="about__section--1-img"
+        />
+      </div>
+    </section>
+
+    <section class="about__stats">
+      <h2 data-lang="about__stats_title" class="about__stats-title">
+        this is what we have achieved
+      </h2>
+      <p data-lang="about__stats_text" class="about__stats-text">
+        With a wealth of experience accumulated over many years, we have had the
+        opportunity to engage with a wide range of clients, providing tailored
+        products and solutions that have varied in complexity. This extensive
+        journey has empowered us with the knowledge and insight needed to
+        navigate the intricacies of our industry, enabling us to consistently
+        deliver exceptional results while fostering enduring relationships with
+        our valued clients.
+      </p>
+
+      <ul class="about__stats-cards">
+        <li class="about__stats-cards-item">
+          <p class="about__stats-cards-num">500+</p>
+          <p data-lang="about__stats_text_1" class="about__stats-cards-text">
+            Clients and unique designs
+          </p>
+        </li>
+        <li class="about__stats-cards-item">
+          <p class="about__stats-cards-num">10.000+</p>
+          <p data-lang="about__stats_text_2" class="about__stats-cards-text">
+            quantity of sewn clothes
+          </p>
+        </li>
+        <li class="about__stats-cards-item">
+          <p data-lang="about__stats_num" class="about__stats-cards-num">
+            since 2017
+          </p>
+          <p data-lang="about__stats_text_3" class="about__stats-cards-text">
+            we have been in this market for more than 7 years
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <h2 data-lang="about_carousel_title" class="about__carousel-title">
+      Team of professionals
+    </h2>
+
+    <div class="owl-carousel">
+      <div>
+        <img
+          src="./img/factory-light.webp"
+          alt="slider image"
+          class="about__carousel-img"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/slider-6.avif"
+          alt="slider image"
+          class="about__carousel-img"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/slider-7.jpg"
+          alt="slider image"
+          class="about__carousel-img"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/WB14.jpg"
+          alt="slider image"
+          class="about__carousel-img"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/slider-4.jpeg"
+          alt="slider image"
+          class="about__carousel-img"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/slider-3.png"
+          alt="slider image"
+          class="about__carousel-img"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/WB15.jpg"
+          alt="slider image"
+          class="about__carousel-img"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/WB16.jpg"
+          alt="slider image"
+          class="about__carousel-img"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/slider-5.avif"
+          alt="slider image"
+          class="about__carousel-img"
+        />
+      </div>
+      <!-- Add more "div" elements with images as per your requirement -->
+    </div>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__left">
+          <div class="footer__logo-container">
+            <a href="./index.html" class="footer__logo-anchor">
+              <img class="footer__logo-img" src="./img/logo.jpg" alt="logo" />
+            </a>
+          </div>
+
+          <p data-lang="footer_text" class="footer__text">
+            2017 Aria. 7 years on the market
+          </p>
+          <p class="footer__phone">+374-44-444-444</p>
+          <ul class="footer__links">
+            <li class="footer__links-item">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/aria__textile/"
+                class="footer__links-anchor"
+                ><img
+                  src="./img/icons8-instagram-50 (1).png"
+                  alt="gmail"
+                  class="footer__icon"
+              /></a>
+            </li>
+            <li class="footer__links-item">
+              <img
+                src="./img/icons8-facebook-50.png"
+                alt="facebook"
+                class="footer__icon"
+              />
+            </li>
+            <li class="footer__links-item">
+              <img
+                src="./img/icons8-gmail-50 (1).png"
+                alt="instagram"
+                class="footer__icon"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="footer__middle">
+          <h4 data-lang="footer_nav" class="footer__contact">Navigation</h4>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a data-lang="footer_about" href="./aboutus.html">About us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a data-lang="footer_contact" href="./contacts.html">Contacts</a>
+            </li>
+            <li data-lang="footer_faq" class="footer__nav-item">
+              <a href="./faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <h4 data-lang="footer_contact_title" class="footer__contact">
+            Contacts
+          </h4>
+          <ul class="footer__contacts">
+            <li class="footer__contacts-item">+37441010081 | +37498133024</li>
+            <li class="footer__contacts-item">company-email@gmail.com</li>
+            <li data-lang="footer_address" class="footer__contacts-item">
+              Vagharshapat, Tumanyan 2A
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="carousel.js"></script>
+    <script src="translate.js"></script>
+  </body>
+</html>

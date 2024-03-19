@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" type="image/png" href="./img/logo.jpg" />
+    <title>Aria | FAQ</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">
+        <a href="./index.html" class="header__list-link header__list-logo"
+          ><img
+            class="header__logo-img"
+            src="./img/logo-removebg-preview.png"
+            alt="logo"
+        /></a>
+      </h1>
+      <ul class="header__list">
+        <!-- <li class="header__list-item">
+          <a
+            href="./aboutus.html"
+            data-lang="about"
+            class="lang header__list-link"
+            >About us</a
+          >
+        </li>
+        <li class="header__list-item">
+          <a
+            href="./contacts.html"
+            data-lang="contacts"
+            class="lang header__list-link"
+            >Contacts</a
+          >
+        </li>
+        <li class="header__list-item">
+          <a href="./faq.html" data-lang="faq" class="lang header__list-link"
+            >FAQ</a
+          >
+        </li> -->
+        <div class="dropdown">
+          <input type="checkbox" id="dropdown" />
+
+          <label class="dropdown__face" for="dropdown">
+            <div class="dropdown__text">Language</div>
+
+            <div class="dropdown__arrow"></div>
+          </label>
+
+          <ul class="dropdown__items">
+            <li class="dropdown__item">
+              <button
+                class="translate translate-eng"
+                id="en"
+                data-btn="en"
+              ></button>
+            </li>
+            <li class="dropdown__item">
+              <button
+                class="translate translate-rus"
+                id="ru"
+                data-btn="ru"
+              ></button>
+            </li>
+            <li class="dropdown__item">
+              <button
+                class="translate translate-arm"
+                id="am"
+                data-btn="am"
+              ></button>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </header>
+
+    <!-- <header class="header"></header> -->
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="navigation__button">
+        <span
+          class="navigation__icon"
+          aria-label="toggle navigation menu"
+        ></span>
+      </label>
+      <div class="navigation__background"></div>
+
+      <nav class="navigation__nav" role="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              href="./aboutus.html"
+              data-lang="about"
+              class="lang header__list-link"
+              >About us</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="./contacts.html"
+              data-lang="contacts"
+              class="lang header__list-link"
+              >Contacts</a
+            >
+          </li>
+          <a href="./faq.html" data-lang="faq" class="lang header__list-link"
+            >FAQ</a
+          >
+        </ul>
+      </nav>
+    </div>
+
+    <div>
+      <h1 data-lang="faq_title" class="faq__title">
+        Frequently Asked Questions
+      </h1>
+
+      <div class="faqs-container">
+        <div class="faq active">
+          <h3 class="faq-title">How to order?</h3>
+          <p class="faq-text">
+            Contact us and we will start working on your project. You can find
+            out more about ordering process on the
+            <a href="./index.html" style="text-decoration: underline"
+              >home page</a
+            >
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">What materials do you use?</h3>
+          <p class="faq-text">Nobody knows.</p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">Do you have delivery?</h3>
+          <p class="faq-text">Yes! ....</p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">
+            Is there minimum or maximum amount of clothes I can order?
+          </h3>
+          <p class="faq-text">Yes/No. ......</p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">What are your manufacturing capabilities?</h3>
+          <p class="faq-text">
+            We have the capacity for various manufacturing processes including
+            cutting, sewing, printing, embroidery, and garment washing.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">What is your lead time for production?</h3>
+          <p class="faq-text">
+            The lead time for production can vary depending on the quantity and
+            complexity of the order. Typically, it ranges from [X time period]
+            to [Y time period].
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">
+            What quality control measures do you have in place?
+          </h3>
+          <p class="faq-text">
+            We have a dedicated quality control team that conducts inspections
+            at various stages of production to ensure that the garments meet the
+            specified quality standards.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">
+            Are you able to comply with international quality standards?
+          </h3>
+          <p class="faq-text">
+            Yes, we adhere to international quality standards and can provide
+            the necessary documentation and certifications upon request.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">Can you accommodate custom designs?</h3>
+          <p class="faq-text">
+            Yes, we have the capability to work with custom designs provided by
+            the clients.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">How do you determine pricing?</h3>
+          <p class="faq-text">
+            Pricing is determined based on factors such as the type of garment,
+            quantity, complexity of the design, and any additional customization
+            requirements.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">Do you offer discounts for bulk orders?</h3>
+          <p class="faq-text">
+            Yes, we offer competitive pricing for bulk orders and can provide
+            discounts based on the order quantity.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__left">
+          <div class="footer__logo-container">
+            <a href="./index.html" class="footer__logo-anchor">
+              <img class="footer__logo-img" src="./img/logo.jpg" alt="logo" />
+            </a>
+          </div>
+
+          <p data-lang="footer_text" class="footer__text">
+            2017 Aria. 7 years on the market
+          </p>
+          <p class="footer__phone">+374-44-444-444</p>
+          <ul class="footer__links">
+            <li class="footer__links-item">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/aria__textile/"
+                class="footer__links-anchor"
+                ><img
+                  src="./img/icons8-instagram-50 (1).png"
+                  alt="gmail"
+                  class="footer__icon"
+              /></a>
+            </li>
+            <li class="footer__links-item">
+              <img
+                src="./img/icons8-facebook-50.png"
+                alt="facebook"
+                class="footer__icon"
+              />
+            </li>
+            <li class="footer__links-item">
+              <img
+                src="./img/icons8-gmail-50 (1).png"
+                alt="instagram"
+                class="footer__icon"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="footer__middle">
+          <h4 data-lang="footer_nav" class="footer__contact">Navigation</h4>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a data-lang="footer_about" href="./aboutus.html">About us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a data-lang="footer_contact" href="./contacts.html">Contacts</a>
+            </li>
+            <li data-lang="footer_faq" class="footer__nav-item">
+              <a href="./faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <h4 data-lang="footer_contact_title" class="footer__contact">
+            Contacts
+          </h4>
+          <ul class="footer__contacts">
+            <li class="footer__contacts-item">+37441010081 | +37498133024</li>
+            <li class="footer__contacts-item">company-email@gmail.com</li>
+            <li data-lang="footer_address" class="footer__contacts-item">
+              Vagharshapat, Tumanyan 2A
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="translate.js"></script>
+  </body>
+</html>
