@@ -1383,7 +1383,7 @@ input[value="4"]:checked ~ * [data-scene="4"] + [data-scene] {
 }
 @media only screen and (max-width: 37.5em) {
   .heading {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 .heading__top {
