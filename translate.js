@@ -41,12 +41,12 @@ const homeText = {
     en: "Clothes Production",
   },
   trending_subtitle: {
-    am: "XXX",
+    am: "Բարձր որակի արտադրություն",
     ru: "Превращение нитей в модные стили",
     en: "Transforming Threads into Trendsetting Styles",
   },
   trending_card_title_1: {
-    am: "XXX",
+    am: "Կանացի շապիկ",
     ru: "Женская Майка",
     en: "Shirt For Woman",
   },
