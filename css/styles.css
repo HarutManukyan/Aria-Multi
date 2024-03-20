@@ -1086,6 +1086,12 @@ svg {
     margin-top: 41rem;
   }
 }
+@media only screen and (max-width: 32em) {
+  .order__title {
+    font-size: 4rem;
+    margin-top: 46rem;
+  }
+}
 .order__title span {
   font-size: 3rem;
 }
