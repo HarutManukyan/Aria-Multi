@@ -1152,10 +1152,12 @@ svg {
       margin-top: 41rem;
     }
 
-    @include respond(31em) {
-      font-size: 4rem;
-      margin-top: 46rem;
-    }
+   @media only screen and (max-width: 32em) {
+  .order__title {
+    font-size: 4rem;
+    margin-top: 46rem;
+  }
+}
     
     & span {
       font-size: 3rem;
